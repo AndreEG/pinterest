@@ -10,20 +10,27 @@ body {
 
 header {
     /*outline: 1px solid red;*/
-    position: fixed;
-    padding: 0 0px 10px 0px;
-    width: 100%;
     background-color: white;
+    padding: 0 0px 10px 0px;
+    position: fixed;
+    width: 100%;
     z-index: 1000;
 }
 
 ul{
     /*outline: 1px solid yellow;*/
-    text-align: center;
     list-style: none;
-    overflow: hidden;
     margin: 0;
+    overflow: hidden;
     padding: 0;
+    text-align: center;
+}
+
+li {
+    /*outline: 1px solid blue;*/
+    display: inline-block;
+    /*float: left;*/
+    margin: 10px 15px;
 }
 
 .bar-menu {
@@ -34,22 +41,42 @@ hr {
     clear: left;
 }
 
-li {
-    /*outline: 1px solid blue;*/
-    display: inline-block;
-    /*float: left;*/
-    margin: 10px 15px;
-    
+header ul li span {
+    color: #b5b5b5;
+    font-size: 22px;
 }
 
-header ul li span {
-    font-size: 22px;
-    color: #b5b5b5;
+.circle{
+    background: #BD081C;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    text-align: center;   
+}
+
+.icon-pinterest {
+    color: white;
+    font-size: 20px;
+}
+
+.search {
+    background: #efefef;
+    border-radius: 5px;
+    height: 40px;
+    width: 965px;
+    position: relative;
+}
+
+.search div {
+    display: inline-block;
 }
 
 header ul li.search span {
-    font-size: 17px;
     color: black;
+    font-size: 17px;
 }
 
 .icon-search {
@@ -58,8 +85,8 @@ header ul li.search span {
 }
 
 input {
-    border: none;
     background: none;
+    border: none;
     font-size: 18px;
     position: relative;
     left: -285px;
@@ -76,87 +103,58 @@ input {
     left: 300px;
 }
 
-.search div {
-    display: inline-block;
-}
-
-.circle{
-    display: inline-block;
-    width: 38px;
-    height: 38px;
-    text-align: center;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #BD081C;
-}
-
-.icon-pinterest {
-    color: white;
-    font-size: 20px;
-}
-
-.search {
-    width: 965px;
-    height: 40px;
+.bar-submenu div {
+    /*outline: 1px solid green;*/
     border-radius: 5px;
-    background: #efefef;
-    position: relative;
+    color: white;
+    display: inline-block;
+    margin: 0 7px;
+    padding: 20px 25px;
 }
 
 header ul p{
     margin: 0;
 }
 
-.bar-submenu div {
-    color: white;
-    border-radius: 5px;
-    /*outline: 1px solid green;*/
-    display: inline-block;
-    padding: 20px 25px;
-    margin: 0 7px;
-}
-
 .sub-menu-1 {
-    
-    /*background-image: url(https://cdn.static-economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png);
-    background-size: 150px; */
-    background-color: rgba(194,149,110,.5);
+    background-color: rgba(194,149,110,.7);
+    font-weight: 600;
 }
 
 .sub-menu-2 {
-    background-color: rgba(150,110,75,.8);
+    background-color: rgba(150,110,75,.9);
+    font-weight: 600;
 }
 
 section {
-    overflow: hidden;
     /*outline: 1px solid green;*/
+    column-count: 4;
+    column-gap: 20px;
+    overflow: hidden;
     position: absolute;
     top: 160px;
     width: 88%;
-    column-count: 4;
-    column-gap: 20px;
     padding: 0 6%;
 }
 
 .container {
-    width: 100%;
     /*outline: 1px solid pink;*/
-    overflow: hidden;
     display: inline-block;
+    overflow: hidden;
+    width: 100%;
 }
 
 img {
-    width: 100%;
     border-radius: 20px;
     margin-bottom: 15px;
+    width: 100%;   
 }
 
 section div.container h3, section div.container h4, section div.container p {
     /*outline: 1px solid gray;*/
-    width: 70%;
-    margin: 0;
     float: left;
+    margin: 0;
+    width: 70%;
 }
 
 section div.container p {
@@ -165,9 +163,9 @@ section div.container p {
 
 section div.container div {
     /*outline: 1px solid red;*/
-    width: 28%;
     color: gray;
-    font-size: 13px;
-    text-align: right;
     float: left;
+    font-size: 10px;
+    text-align: right;
+    width: 28%;
 }
