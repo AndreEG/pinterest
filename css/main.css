@@ -2,22 +2,33 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 header {
     /*outline: 1px solid red;*/
-    overflow: hidden;
-    padding: 0;
-    text-align: center;
+    position: fixed;
+    padding: 0 0px 10px 0px;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
 }
 
 ul{
-    outline: 1px solid yellow;
+    /*outline: 1px solid yellow;*/
+    text-align: center;
     list-style: none;
     overflow: hidden;
     margin: 0;
     padding: 0;
-    line-height: 42px;
 }
 
+.bar-menu {
+    line-height: 42px;
+}
 
 hr {
     clear: left;
@@ -27,7 +38,7 @@ li {
     /*outline: 1px solid blue;*/
     display: inline-block;
     /*float: left;*/
-    margin: 5px 15px;
+    margin: 10px 15px;
     
 }
 
@@ -43,18 +54,26 @@ header ul li.search span {
 
 .icon-search {
     position: relative;
-    left: -380px;
+    left: -300px;
 }
 
-.icon-close {
+input {
+    border: none;
+    background: none;
+    font-size: 18px;
     position: relative;
-    left: 380px;
+    left: -285px;
+}
+
+.icon-cross {
+    position: relative;
+    left: 280px;
 }
 
 .bar-text {
     margin: 0;
     position: relative;
-    left: 400px;
+    left: 300px;
 }
 
 .search div {
@@ -85,6 +104,70 @@ header ul li.search span {
     position: relative;
 }
 
+header ul p{
+    margin: 0;
+}
+
 .bar-submenu div {
+    color: white;
+    border-radius: 5px;
+    /*outline: 1px solid green;*/
     display: inline-block;
+    padding: 20px 25px;
+    margin: 0 7px;
+}
+
+.sub-menu-1 {
+    
+    /*background-image: url(https://cdn.static-economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png);
+    background-size: 150px; */
+    background-color: rgba(194,149,110,.5);
+}
+
+.sub-menu-2 {
+    background-color: rgba(150,110,75,.8);
+}
+
+section {
+    overflow: hidden;
+    /*outline: 1px solid green;*/
+    position: absolute;
+    top: 160px;
+    width: 88%;
+    column-count: 4;
+    column-gap: 20px;
+    padding: 0 6%;
+}
+
+.container {
+    width: 100%;
+    /*outline: 1px solid pink;*/
+    overflow: hidden;
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+section div.container h3, section div.container h4, section div.container p {
+    /*outline: 1px solid gray;*/
+    width: 70%;
+    margin: 0;
+    float: left;
+}
+
+section div.container p {
+    margin: 2px 0 18px 0;
+}
+
+section div.container div {
+    /*outline: 1px solid red;*/
+    width: 28%;
+    color: gray;
+    font-size: 13px;
+    text-align: right;
+    float: left;
 }
